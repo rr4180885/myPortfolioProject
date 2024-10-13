@@ -17,16 +17,16 @@ export const metadata = {
 };
 
 // Directly define the function to accept children and any additional props
-export default function RootLayout({ children, ...props }: { children: ReactNode; [key: string]: any }) {
+const RootLayout: React.FC = ({ children }) => {
   return (
     <html lang="en">
       <body className={jetbrainsMono.variable}>
         <Header />
         <StairTransition />
-        <PageTransition {...props}>
+        <PageTransition>
           {children}
         </PageTransition>
       </body>
     </html>
   );
-}
+};
