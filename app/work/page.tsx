@@ -60,7 +60,7 @@ const projects = [
 
 const Work = () => {
     const [project, setProject] = useState(projects[0]);
-    const handleSlideChange = (swiper) =>{
+    const handleSlideChange = (swiper: { activeIndex: any; }) =>{
         //get current slide inex
         const currentIndex = swiper.activeIndex;
         //update project state based on current index
