@@ -17,10 +17,12 @@ const Home = () => {
           </p>
           {/* btn and socials */}
           <div className="flex flex-col xl:flex-row items-center gap-8">
-            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-              <span>Download CV</span>
-              <FiDownload className="text-xl"/>
-            </Button>
+            <a href="/assets/resume/Rakesh_Ranjan_CV.pdf" download>
+              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2 group">
+                <span>Download CV</span>
+                <FiDownload className="text-xl group-hover:text-blue-500" />
+              </Button>
+            </a>
             <div className="mb-8 xl:mb-0">
               <Social containerStyles="flex gap-6" iconStyles="w-9 h-9 border
               border-accent rounded-full flex justify-center items-center 
